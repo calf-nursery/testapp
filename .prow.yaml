@@ -1,0 +1,9 @@
+presubmits:
+- name: pull-testapp-build
+  always_run: true
+  decorate: true
+  spec:
+    containers:
+    - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20230727-ea685f8747-1.27
+      command:
+      - make build
