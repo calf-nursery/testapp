@@ -1,6 +1,7 @@
 presubmits:
 - name: pull-testapp-build
   always_run: true
+  optional: false
   decorate: true
   spec:
     containers:
